@@ -403,12 +403,8 @@
 <p>2024 年高考出现「破格录取」的政策：高考数学 <span class="arithmatex">\(140\)</span> 分以上基本被 985 破格录取。这是真的。但是看看现在高考，模拟考的真题，<span class="arithmatex">\(140\)</span> 难上加难。2024九省联考压轴费马小定理，2024广东一模压轴线性代数……</p>
 <p>所以，国家重视数学，我们学生更要重视数学。</p>
 <h2 id="本站是什么">本站是什么？<a class="headerlink" href="#本站是什么" title="Permanent link"></a></h2>
-<p>本站灵感来源于 <a href="https://oi-wiki.org">OI Wiki</a>，坚持免费提供学习资源。本站目前处于起步阶段，欢迎大家参加、支持我们的开发。</p>
+<p>本站灵感来源于 <a href="https://oi-wiki.org">OI Wiki</a>，坚持免费提供学习资源。本站目前处于起步阶段，欢迎大家参加我们的开发。</p>
 <p>本项目开源：<a href="https://github.com/WuhuOITeam/math-wiki">https://github.com/WuhuOITeam/math-wiki</a>。</p>
-<details class="warning" open="open">
-<summary>Warning</summary>
-<p>ok.</p>
-</details>
 <hr />
 <p>本页贡献者：<a href="https://mahaoming2022.github.io">mahaoming2022</a>。</p>
 
@@ -425,6 +421,81 @@
 
 
 
+<div style="margin-left: 20px;display:flex;">
+    <div style="/*! height:100%; */ width: 5px; background-color: skyblue; display: inline-block"></div>
+    <div style="margin-left: 10px;">
+    本页面贡献者：
+    <script>
+      var authors_list = document.querySelector("meta[name=author]").content;
+      authors_list = authors_list.split(",");
+      for (let i = 0; i < authors_list.length; i++) {
+        document.write(
+          '<a href="https://github.com/' + authors_list[i] + '">' + authors_list[i] + '</a>'
+        )
+        if (i != authors_list.length - 1) {
+          document.write(', ');
+        }
+      }
+      var time = document.getElementsByClassName("md-source-file")[0];
+      var time2 = document.getElementsByClassName("git-revision-date-localized-plugin")[0];
+      time2 = time2.innerText;
+      time.innerHTML = "";
+      document.write("<br />最近更新时间：" + time2 + "<br />");
+      </script>
+      本页面的全部内容在 <strong><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh"> CC BY-SA 4.0 </a></strong>和<strong><a href="https://github.com/zTrix/sata-license"> SATA </a></strong>协议之条款下提供，附加条款亦可能应用
+    </div>
+    </div>
+  
+    <script src="https://giscus.app/client.js"
+    data-repo="WuhuOITeam/math-wiki"
+    data-repo-id="R_kgDOL2OmHw"
+    data-category="[在此输入分类名]"
+    data-category-id="[在此输入分类 ID]"
+    data-mapping="url"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+    <!-- Synchronize Giscus theme with palette -->
+    <script>
+      var giscus = document.querySelector("script[src*=giscus]")
+  
+      // Set palette on initial load
+      var palette = __md_get("__palette")
+      if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate"
+          ? "transparent_dark"
+          : "light"
+  
+        // Instruct Giscus to set theme
+        giscus.setAttribute("data-theme", theme) 
+      }
+  
+      // Register event handlers after documented loaded
+      document.addEventListener("DOMContentLoaded", function() {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function() {
+          var palette = __md_get("__palette")
+          if (palette && typeof palette.color === "object") {
+            var theme = palette.color.scheme === "slate"
+              ? "transparent_dark"
+              : "light"
+  
+            // Instruct Giscus to change theme
+            var frame = document.querySelector(".giscus-frame")
+            frame.contentWindow.postMessage(
+              { giscus: { setConfig: { theme } } },
+              "https://giscus.app"
+            )
+          }
+        })
+      })
+    </script>
                 
               </article>
             </div>
